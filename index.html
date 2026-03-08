@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUET Civil Engineering Section B | Digital Batch Directory</title>
-    <!-- Tailwind CSS -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- AOS Animation Library -->
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- GSAP Library -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <!-- Particle JS -->
+    
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     
     <style>
@@ -207,12 +207,12 @@
             transform: scale(1.05);
         }
         
-        /* Fixed: Roll badge removed from photo - will show below */
+        
         .photo-roll-badge {
             display: none;
         }
         
-        /* Fixed: Content below photo - name and roll */
+        
         .card-content-front {
             height: 50%;
             padding: 16px;
@@ -315,13 +315,13 @@
         .wa-icon { color: #25D366; }
         .insta-icon { color: #e4405f; }
         
-        /* Dashboard background with light gradient */
+        
         #dashboard {
             background: linear-gradient(135deg, #f0f9ff, #e0f2fe, #ffffff);
             min-height: 100vh;
         }
         
-        /* Welcome page background */
+       
         #welcome-page {
             background: linear-gradient(135deg, #dbeafe, #ede9fe, #fce7f3);
         }
@@ -343,7 +343,7 @@
             font-weight: 400;
         }
         
-        /* Tag styles with light theme transparency */
+        
         .tag-light {
             display: inline-block;
             padding: 4px 12px;
@@ -393,7 +393,7 @@
             border-color: rgba(245, 158, 11, 0.3);
         }
         
-        /* Floating icons with light theme transparency */
+        
         .floating-icon-light {
             background: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(8px);
@@ -401,7 +401,7 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.02);
         }
         
-        /* Total students counter for light theme */
+        
         .total-students-badge-light {
             background: rgba(255, 255, 255, 0.3);
             backdrop-filter: blur(8px);
@@ -411,7 +411,7 @@
             color: #1e293b;
         }
         
-        /* Input field for light theme */
+        
         .input-light {
             background: rgba(255, 255, 255, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.5);
@@ -429,13 +429,13 @@
     </style>
 </head>
 <body class="relative">
-    <!-- Welcome Page - Light Theme with Fixed Mobile Layout -->
+    
 <section id="welcome-page" class="h-screen w-full flex flex-col justify-center items-center relative overflow-hidden px-4">
     <!-- Particle Background -->
     <div id="particles-js" class="particles-bg"></div>
     <div class="welcome-overlay-light"></div>
     
-    <!-- Main Content with Responsive Padding -->
+    
     <div class="text-center z-10 px-4 sm:px-6 py-8 sm:py-10 md:py-12 glass-bg rounded-2xl sm:rounded-3xl max-w-[90%] sm:max-w-2xl md:max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1500">
         <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold mb-2 sm:mb-3 md:mb-4 text-gradient-light">
             RUET
@@ -455,7 +455,7 @@
         </button>
     </div>
     
-    <!-- Floating Icons - Closer to content and larger on mobile -->
+    
     <div class="absolute top-[15%] left-[5%] sm:top-20 sm:left-10 text-4xl sm:text-3xl md:text-4xl text-blue-600/60 animate-bounce floating-icon-light p-3 sm:p-3 md:p-4 rounded-full">
         <i class="fas fa-cog"></i>
     </div>
@@ -470,12 +470,12 @@
     </div>
 </section>
     
-    <!-- Shutter Transition Element -->
+    
     <div id="shutter-transition" class="shutter-transition" style="display: none;">
         <div class="shutter-logo text-6xl font-bold text-gradient-light">RUET CIVIL B</div>
     </div>
     
-    <!-- Dashboard - Light Theme -->
+    
     <section id="dashboard" class="min-h-screen w-full py-8" style="display: none;">
         <!-- Sticky Header with Light Theme Transparency -->
         <header class="glass-header sticky top-0 z-50 py-4 px-6 mb-8">
@@ -490,7 +490,7 @@
                     </div>
                 </div>
                 
-                <!-- Total Students Counter -->
+                
                 <div class="total-students-badge-light">
                     <p class="text-sm text-dark-medium">Total Students</p>
                     <p class="text-2xl font-bold text-dark-high">60</p>
@@ -499,7 +499,7 @@
         </header>
         
         <div class="container mx-auto px-4">
-            <!-- Executive Row with Light Theme Transparency -->
+            
             <div class="mb-12">
                 <h2 class="text-3xl font-bold text-dark-high mb-6 text-center">Executive Committee</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -552,7 +552,7 @@
                 </div>
             </div>
             
-            <!-- Search and Filter with Light Theme Transparency -->
+            <!-- Search and Filter -->
             <div class="glass-search rounded-xl p-6 mb-10 shadow-lg">
                 <div class="flex flex-col md:flex-row justify-between items-center">
                     <div class="w-full md:w-2/3 mb-6 md:mb-0">
@@ -588,12 +588,12 @@
                 </div>
             </div>
             
-            <!-- Student Cards Grid -->
+            
             <div id="student-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 <!-- Student cards will be generated dynamically by JavaScript -->
             </div>
             
-            <!-- Empty State -->
+            
             <div id="no-results" class="text-center py-16 glass-card rounded-2xl hidden">
                 <i class="fas fa-user-slash text-5xl text-dark-low mb-4"></i>
                 <h3 class="text-2xl font-bold text-dark-high mb-2">No Students Found</h3>
@@ -601,7 +601,7 @@
             </div>
         </div>
         
-        <!-- Footer with Light Theme Transparency -->
+        
         <footer class="mt-16 py-8 glass-header">
             <div class="container mx-auto px-4 text-center">
                 <h3 class="text-2xl font-bold text-dark-high mb-4">RUET Civil Engineering - Section B</h3>
@@ -618,7 +618,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize AOS
+        
         AOS.init({
             duration: 800,
             once: true,
@@ -1354,10 +1354,10 @@
 
         ];
         
-        // Track currently flipped card
+        
         let currentlyFlippedCard = null;
         
-        // Function to generate student cards with flip functionality
+        
         function generateStudentCards(students) {
             const grid = document.getElementById('student-grid');
             grid.innerHTML = '';
@@ -1380,7 +1380,7 @@
                 
                 cardContainer.innerHTML = `
                     <div id="${cardId}" class="flip-card ${student.isCR ? 'gold-border-light' : ''}">
-                        <!-- Front of Card - Photo top 50%, Name and Roll below -->
+                        
                         <div class="flip-card-front">
                             <div class="card-image-container">
                                 <img src="${student.img}" alt="${student.name}" class="student-image">
@@ -1392,7 +1392,7 @@
                             </div>
                         </div>
                         
-                        <!-- Back of Card - Shows all details -->
+                        
                         <div class="flip-card-back p-4 overflow-y-auto">
                             <div class="relative">
                                 <div class="back-image-container">
@@ -1438,21 +1438,21 @@
                 
                 grid.appendChild(cardContainer);
                 
-                // Add click event to the card
+                
                 const card = document.getElementById(cardId);
                 card.addEventListener('click', function(e) {
                     // Don't flip if clicking on social links
                     if (e.target.closest('a')) return;
                     
-                    // If there's a currently flipped card and it's not this one, flip it back
+                    
                     if (currentlyFlippedCard && currentlyFlippedCard !== this) {
                         currentlyFlippedCard.classList.remove('flipped');
                     }
                     
-                    // Toggle current card
+                    
                     this.classList.toggle('flipped');
                     
-                    // Update currently flipped card
+                    
                     if (this.classList.contains('flipped')) {
                         currentlyFlippedCard = this;
                     } else {
@@ -1462,7 +1462,7 @@
             });
         }
         
-        // Initialize particles background
+        
         function initParticles() {
             particlesJS('particles-js', {
                 particles: {
@@ -1484,13 +1484,13 @@
             });
         }
         
-        // Function to filter students
+        
         function filterStudents() {
             const searchTerm = document.getElementById('search-input').value.toLowerCase();
             
             let filtered = studentData;
             
-            // Apply search filter
+            
             if (searchTerm) {
                 filtered = filtered.filter(student => 
                     student.name.toLowerCase().includes(searchTerm) ||
@@ -1504,16 +1504,16 @@
             generateStudentCards(filtered);
         }
         
-        // GSAP transition from welcome to dashboard
+        
         function transitionToDashboard() {
             const shutter = document.getElementById('shutter-transition');
             const welcomePage = document.getElementById('welcome-page');
             const dashboard = document.getElementById('dashboard');
             
-            // Show the shutter
+            
             shutter.style.display = 'flex';
             
-            // Create the animation timeline
+            
             const tl = gsap.timeline();
             
             tl.fromTo('.shutter-logo', 
@@ -1531,35 +1531,35 @@
                 duration: 0.8,
                 ease: "power2.inOut",
                 onComplete: () => {
-                    // Hide welcome page and show dashboard
+                    
                     welcomePage.style.display = 'none';
                     dashboard.style.display = 'block';
                     shutter.style.display = 'none';
                     
-                    // Reset shutter for next use
+                    
                     gsap.set(shutter, { scaleY: 1 });
                     
-                    // Initialize student cards
+                    
                     generateStudentCards(studentData);
                     
-                    // Refresh AOS animations
+                    
                     setTimeout(() => AOS.refresh(), 100);
                 }
             });
         }
         
-        // Event Listeners
+        
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize particles
+            
             initParticles();
             
-            // Explore button click event
+            
             document.getElementById('explore-btn').addEventListener('click', transitionToDashboard);
             
-            // Search input event
+            
             document.getElementById('search-input').addEventListener('input', filterStudents);
             
-            // Filter buttons
+            
             document.getElementById('filter-all').addEventListener('click', function() {
                 document.getElementById('filter-cr').classList.remove('active');
                 this.classList.add('active');
@@ -1576,7 +1576,7 @@
                 generateStudentCards(crStudents);
             });
             
-            // Quick filter tags
+            
             document.querySelectorAll('.filter-tag').forEach(button => {
                 button.addEventListener('click', function() {
                     const filterText = this.textContent.trim().toLowerCase();
@@ -1595,7 +1595,7 @@
                 });
             });
             
-            // Mark "All Students" as active by default
+            
             document.getElementById('filter-all').classList.add('active');
         });
     </script>
